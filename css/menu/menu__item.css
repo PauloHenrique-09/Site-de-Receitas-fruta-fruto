@@ -1,0 +1,6 @@
+.menu__item{
+    list-style: none;
+}
+.menu__item:last-child.menu__link { /*last-child ou seja ultimo filho da ponta */
+    margin-right: 0; /*Margin para a direita o zero significa que estou zerando a margem da direita.*/
+}

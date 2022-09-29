@@ -1,0 +1,26 @@
+.pessoa__imagem{
+    background-position: center;
+    background-repeat: no-repeat;/* O fundo não deve repetir ou seja não deve espelhar outra imagem iqual*/ 
+    background-size: cover; /* Ele deve cobrir todo o fundo da imagem*/
+    background: center; /*Nosso fundo deve ser centralizado ao centro*/ 
+    border-radius: 100%;
+    height: 250px;
+    margin: 0 auto; /*O auto é pra ele sentralizar a imagem*/
+    width: 250px;
+    
+}   
+
+/* .pessoa__imagem{  Só um teste  */
+    /* background:url(/img/pessoas/andreia.jpg) no-repeat center /cover */
+
+.pessoa__imagem--roberta{
+     background-image: url(/img/pessoas/roberta.jpg);  
+    
+}
+.pessoa__imagem--marcela{
+    background-image: url(/img/pessoas/marcela.jpg);
+
+}
+.pessoa__imagem--andreia{
+    background-image: url(/img/pessoas/andreia.jpg);
+}

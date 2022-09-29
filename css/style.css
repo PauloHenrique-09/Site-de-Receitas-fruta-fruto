@@ -1,0 +1,349 @@
+/*Criei esse arquivo para ter a compreenção que posso trabalhar com o css de duas formas. 
+Dessa forma aqui, ou seja tomando varias linhas do CSS. Ou em formato de pastas, mais organizados,
+otimizando espaços e linhas.*/ 
+@media screen and (min-width: 0) {
+        .logo{
+            display: none;  /* Não iremos mostrar o none para telas pequenas ou seja a imagem.*/
+    
+        }  
+    }
+ @media screen and (min-width: 768px) {
+        .logo{
+            display: block; /* O logo deve está visivel*/
+    
+        }   
+    }
+
+.cabecalho{
+    align-items: center; 
+    background-color: #f9f9f9;     
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem; /* Espaçamento interno para esquerda left(esquerda)*/
+    padding-right: 2rem; /* Espaçamento interno  para direita right(direita)*/
+} 
+@media screen and (min-width: 0) { /* Quando a tela for maior que 0 ele ira aplicar esses estilos*/
+    .cabecalho{
+        justify-content: center;
+        padding: 0 1rem;
+
+    }
+    
+}
+@media screen and (min-width: 768px) { /* Quando a tela for maior que 768px ele ira aplicar esses estilos*/
+    .cabecalho{
+        padding: 0 5rem;
+        justify-content: space-between; 
+    }   
+}
+.banner{
+    position: relative;
+}
+.banner__imagem{
+    background-image: url(/img/banner.jpg);
+    width:100%;
+    /*height:calc(100vh) -72px;*/
+}
+@media screen and (min-width: 0) {
+    .banner__imagem{
+        height: calc(100vh - 51px);
+
+    }   
+}
+@media screen and (min-width: 768px) {
+    .banner__imagem{
+        height: calc(100vh) - 72px;
+
+    }
+    
+}
+
+.banner__titulo{
+    color: #fdfdfd;
+    /*font-size: 4.0625rem;*/
+    font-family:pacifico,cursive; 
+    position: absolute; /*A posição do testo deve ser absoluta na tela*/
+    left: 50%; /* Esse elemento deve fica a esquerda 50% pra que eu possa centralizar ele*/
+    text-align: center;/* Para que o texto possa ficar alinhado ao centro*/
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);/* Coloco a sombra no texto*/
+    top: 35%; /* Ele deve ficar 50% alinhado ao topo*/
+    transform: translate(-50%, -50%); /*primeiro 50% ao eixo x segundo 50% ao eixo y.Comu isso eu translado um pouco o meu titulo*/
+    width: 100%
+}
+@media screen and (min-width: 0) {
+    .banner__titulo {
+        font-size: 3rem;
+
+    }   
+}
+@media screen and (min-width: 768px) {
+    .banner__titulo{
+        font-size: 4.0625rem;
+
+    }
+    
+}
+ 
+.menu__item{
+    list-style: none;
+}
+.menu__item:last-child.menu__link { /* last-child ou seja ultimo filho da ponta*/ 
+    margin-right: 0 ; /*Margin para a direita o zero signiofica que estou zerando a margem da direita.   */
+}
+.menu__link{ 
+    color:#808080;
+    margin-right: 1.25rem; 
+    text-transform: lowercase;
+    text-decoration: none;
+}
+.menu__link.ativo{
+    color: #333333;
+    font-weight:bold;
+}
+.menu__link:hover{
+    text-decoration: underline; /* Coloquei uma underline abaixo dos meus textos,quando o mouse passar por cima ele aparecerá */
+}
+.menu__lista{
+    display: flex;
+}
+.pessoas{
+    display: flex;
+    justify-content: space-around;/* deve haver um espaco entre todas as caixas, ele coloca espaços ao redor */
+    padding-top: 3rem; /*espaçamento no topo*/
+}
+ @media screen and (min-width: 0) {
+    .pessoas {
+        flex-direction: column; /*Pra ele ficar um abaixo do outro (colunas)*/
+
+    }
+    
+ }
+ @media screen and (min-width: 768px) {
+    .pessoas {
+        flex-direction: row; /* Pra ele ficar um ao lado do outro, quando for em telas de tablets*/
+
+    }
+    
+ }
+ .pessoa{
+    display: flex;
+    flex-direction: column; /* A direção do flex deve ser em colula*/
+}
+@media screen and (min-width: 0) {
+    .pessoa{
+        margin-bottom: 2rem;
+
+    }   
+}
+@media screen and (min-width: 768px) {
+    .pessoa{
+        margin-bottom: 0;
+
+    }
+    
+}
+.pessoa__funcao{
+    color: #595959;
+    font-size: 1.25rem;
+    text-transform: lowercase;/* Transformar o texto em caixa baixa, o texto vai ficar todo em minusculo */
+    
+}
+.pessoa__imagem{
+    background-position: center;
+    background-repeat: no-repeat;/* O fundo não deve repetir ou seja não deve espelhar outra imagem iqual*/ 
+    background-size: cover; /* Ele deve cobrir todo o fundo da imagem*/
+    background: center; /*Nosso fundo deve ser centralizado ao centro*/ 
+    border-radius: 100%;
+    height: 250px;
+    margin: 0 auto; /*O auto é pra ele sentralizar a imagem*/
+    width: 250px;
+    
+}   
+
+/* .pessoa__imagem{  Só um teste  */
+    /* background:url(/img/pessoas/andreia.jpg) no-repeat center /cover */
+
+.pessoa__imagem--roberta{
+    background-image: url(/img/pessoas/roberta.jpg);
+    
+}
+.pessoa__imagem--marcela{
+    background-image: url(/img/pessoas/marcela.jpg);
+
+}
+.pessoa__imagem--andreia{
+    background-image: url(/img/pessoas/andreia.jpg);
+}
+.pessoa__nome{
+    color: #8d0606;
+    font-family: pacifico,cursive;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+.quem-somos__descricao{
+    color: #8C8888;
+    font-weight: 300; /* O peso da fonte*/
+    font-size: 1.70rem;
+    
+
+
+}
+.quem-somos__titulo{
+
+    color:#8d0606 ;
+    font-family:pacifico,cursive;
+    font-size:2.1875rem ;
+    margin-bottom:1rem; /* Vamos colocar uma margem em baixo pra dá um afastamento na descrição.*/ 
+}
+.quem-somos{
+    padding: 5rem;
+    text-align: center;
+}
+.receitas{
+    background: #e5e5e5;
+    display: flex;
+    flex-wrap: wrap; /* Ele quebra automaticamente os elementos de linha em colulas */
+    /*padding: 5rem 0 0 5rem;*/   
+}
+@media screen and (min-width: 0) {
+    .receitas {
+       padding: 5rem 0 0 1rem; 
+
+    }   
+}
+@media screen and (min-width: 768px) {
+    .receitas {
+        padding: 5rem 0 0 2.5rem;
+
+    }   
+}
+@media screen and (min-width: 992px) {
+    .receitas{
+        padding: 5rem 0 0 5rem;
+
+    }   
+}
+
+.receita__botao{
+    background: #8d0606;
+    border: none;
+    border-radius: 5px;
+    color: #fdfdfd;/* Cor do potão */
+    padding: 1rem;
+    transition: all .1s ease-in-out;/*A animação deve começar devagar e terminar devagar*/
+}
+.receita__botao:hover{ /* Quando o mouse estiver em cima do botao hover,vamos colocar um cursor:pointer que é um ponteiro ou seja um ponto. Dando uma ideia que ele pode ser clicado.*/
+    background: #620404;/* Só pra saber que o mouser está em cima do botão. Ele vai ficar um pouco mais escuro*/
+    cursor: pointer;
+}
+.receita__conteudo{
+    padding: 1rem;
+
+}
+.receita__descricao{
+    font-size: 1.1875rem;
+    line-height:1.5;/* altura da fonte*/
+    text-align: justify;
+}
+.receita__imagem{
+    height:190px;
+     
+}
+.receita__titulo{
+    font-size: 20px;
+}
+.receita{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column; /*Esse flex-direction: column( É pra ele ser colula, pra ficar uma abaixo do outro).*/
+    margin-bottom: 5rem; /*Pra ele ter uma espacamento abaixo das receitas.*/
+   /* margin-right: 5rem; pra ele ter um espaçamento a direita*/
+    /*width: calc(25% - 5rem); /* Esse -5rem é referente a esse espaçamento na direita que colocamos no margin*/
+    
+}
+@media screen and (min-width: 0) { /* para telas bem pequenas geralmente celulares */
+    .receita {
+        margin-right: 1rem;
+        width: 100%;
+
+    }   
+}
+@media screen and (min-width: 768px) {  /*Para tablets*/
+    .receita {
+        margin-right: 2.5rem;
+        width: calc(33.33% - 2.5rem);
+
+    }   
+}
+@media screen and (min-width: 992px) { /* para computadores */
+    .receita {
+        margin-right: 5rem; /*pra ele ter um espaçamento a direita*/
+     width: calc(25% - 5rem); /* Esse -5rem é referente a esse espaçamento na direita que colocamos no margin*/
+
+
+
+    }  
+}
+
+.sobre__descricao{
+    color: #595959;     
+    font-weight: 100;
+    
+}
+@media screen and(min-width:0) {
+    .sobre__descricao{
+        font-size: 1.3rem;
+        
+    }   
+}
+@media screen and(min-width:768px) {
+    .sobre__descricao{
+        font-size: 1.40rem;      
+    }
+    
+}   
+.sobre__titulo{
+    color: #8d0606;
+    font-family: pacifico,cursive;
+}
+@media screen and(min-width:0) {
+    .sobre__titulo{
+        font-size: 2rem;
+        
+    }   
+}
+@media screen and(min-width:768px) {
+    .sobre__titulo{
+        font-size: 1.90rem;
+
+    }   
+}   
+
+.sobre{
+    text-align: center;
+    
+}
+@media screen and(min-width:0) {
+    
+    .sobre{
+        padding: 2.5rem 1rem;
+
+    }   
+}
+@media screen and(min-width:768px) {
+    .sobre{
+        padding: 2.5rem; /*Espaçamento entre o titulo e a imagem */
+
+    }
+    
+}
+.rodape{
+    background: #bfbfbf;
+    color: #fdfdfd;
+    text-align: right ; /* O texto será colocado a direita*/
+    padding: 1.5625rem 5rem; /*Na direita e na esquerda vai ser 5rem;*/
+    text-transform: lowercase; /*Irei colocar o texto em minusculo. Colocar o texto em caixa baixa*/
+
+}
+

@@ -1,0 +1,18 @@
+.banner__titulo{
+    font-family:pacifico,cursive; 
+    color: #fdfdfd;
+   /* font-size: 4.0625rem;*/
+    position: absolute; /*A posição do testo deve ser absoluta na tela*/
+    left: 50%; /* Esse elemento deve fica a esquerda 50% pra que eu possa centralizar ele*/
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);/* Coloco a sombra no texto*/
+    top: 35%; /* Ele deve ficar 50% alinhado ao topo*/
+    text-align: center;/* Para que o texto possa ficar alinhado ao centro*/
+    transform: translate(-50%, -50%); /*primeiro 50% ao eixo x segundo 50% ao eixo y.Comu isso eu translado um pouco o meu titulo*/
+    width: 100%;  
+}
+
+ 
+
+
+
+ 

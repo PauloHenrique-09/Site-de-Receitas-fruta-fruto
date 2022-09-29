@@ -1,0 +1,5 @@
+.pessoas{
+    display: flex;
+    justify-content: space-around;/* deve haver um espaco entre todas as caixas, ele coloca espaços ao redor */
+    padding-top: 3rem; /*espaçamento no topo*/
+}

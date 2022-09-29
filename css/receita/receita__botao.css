@@ -1,0 +1,12 @@
+.receita__botao{
+    background: #8d0606;
+    border: none;
+    border-radius: 5px;
+    color: #fdfdfd;/* Cor do potão */
+    padding: 1rem;
+    transition: all .1s ease-in-out;/*A animação deve começar devagar e terminar devagar*/
+}
+.receita__botao:hover{ /* Quando o mouse estiver em cima do botao hover,vamos colocar um cursor:pointer que é um ponteiro ou seja um ponto. Dando uma ideia que ele pode ser clicado.*/
+    background: #620404;/* Só pra saber que o mouser está em cima do botão. Ele vai ficar um pouco mais escuro*/
+    cursor: pointer;
+}

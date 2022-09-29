@@ -1,0 +1,12 @@
+@media screen and (min-width: 0) {
+    .logo {
+        display: none;  /* Não iremos mostrar o none para telas pequenas ou seja a imagem.*/
+
+    }  
+}
+@media screen and (min-width: 768px) {
+    .logo {
+        display: block; /* O logo deve está visivel*/
+
+    }   
+}

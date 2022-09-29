@@ -1,0 +1,9 @@
+.receita{
+     background: #fdfdfd;
+     display: flex;
+     flex-direction: column; /*Esse flex-direction: column( É pra ele ser colula, pra ficar uma abaixo do outro).*/
+     margin-bottom: 5rem; /*Pra ele ter uma espacamento abaixo das receitas.*/
+     /*margin-right: 5rem; pra ele ter um espaçamento a direita
+     width: calc(25% - 5rem); /* Esse -5rem é referente a esse espaçamento na direita que colocamos no margin*/
+    
+}

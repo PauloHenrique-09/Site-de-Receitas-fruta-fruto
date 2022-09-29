@@ -1,0 +1,8 @@
+.rodape{
+    background: #bfbfbf;
+    color: #fdfdfd;
+    text-align: right ; /* O texto será colocado a direita*/
+    padding: 1.5625rem 5rem; /*Na direita e na esquerda vai ser 5rem;*/
+    text-transform: lowercase; /*Irei colocar o texto em minusculo. Colocar o texto em caixa baixa*/
+
+}
